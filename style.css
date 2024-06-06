@@ -124,13 +124,6 @@ select:hover {
     cursor: not-allowed;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
 button{
     height: 40px;
     width: 130px;
@@ -145,10 +138,12 @@ button:hover{
 }
 
 #board-overlay {
+    width: 100vw;
+    height: 100vw;
+    max-width: 460px;
+    max-height: 460px;
+    margin: 0 auto;
     position: absolute;
-    display: flex;
-    width: 450px;
-    height: 450px;
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
@@ -188,9 +183,5 @@ button:hover{
         height: 45px;
         width: 100px;
         font-size: 14px;
-    }
-
-    .button-container{
-        flex-direction: column;
     }
 }
