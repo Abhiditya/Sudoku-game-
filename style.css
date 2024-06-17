@@ -76,7 +76,7 @@ select:hover {
 
 .board{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     max-width: 460px;
     max-height: 460px;
     display: grid;
