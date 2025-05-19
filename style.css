@@ -5,19 +5,22 @@
 }
 
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    background-color:rgba(0, 148, 168, 0.471);
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
     font-weight: bold;
     padding-block: 5px;
+    margin: 0.5rem;
+    border-bottom: 3px solid rgb(5, 60, 67);
 }
 
 hr{
@@ -28,26 +31,24 @@ hr{
 
 .top-right{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 1rem;
+    right: 1rem;
     display: flex;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .top-right label{
-    margin: 5px;
-    font-size: 16px;
+    margin: 0.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 select{
-    -webkit-appearance: none;  
-    -moz-appearance: none;     
-    appearance: none;
     background-color: rgb(198, 241, 238);
     color: black;
-    padding: 5px 8px;
-    font-size: 15px;
+    padding: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     border: 1px solid black;
     transition: background-color 0.3s;
@@ -125,12 +126,17 @@ select:hover {
 }
 
 button{
-    height: 40px;
-    width: 130px;
-    font-size: 15px;
-    margin-inline: 10px;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.1rem;
+    margin: 1rem;
     background-color: rgb(198, 241, 238);
     font-weight: bold;
+}
+
+.button-container{
+    gap: 1rem;
+    margin: 1rem;
 }
 
 button:hover{
@@ -158,14 +164,11 @@ button:hover{
     align-items: center;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 24px;
-    }
-
+@media (max-width: 500px) {
     .top-right {
-        top: 5px;
-        right: 5px;
+        position: relative;
+        justify-content: center;
+        margin-top: -2rem;
     }
 
     select {
@@ -173,13 +176,28 @@ button:hover{
         padding: 3px 5px;
     }
 
-    #errors {
-        font-size: 25px;
-    }
-
     button {
-        height: 45px;
-        width: 100px;
+        height: 2.5rem;
+        width: 6rem;
         font-size: 14px;
     }
+}
+
+.disable{
+    color: white;
+}
+
+.lives-container {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.status-bar{
+    margin: 0.5rem;
+}
+
+.custom-message{
+    display: none; 
+    color:rgba(114, 12, 12, 0.833);
+    margin: 1rem;
 }

@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
     <h1>Sudoku</h1>
-    <hr>
     <div class="top-right">
         <label for="level">Level :</label>
         <select id="level">
@@ -20,17 +18,24 @@
             <option value="hard">Hard</option>
         </select>
     </div>
-    <h2 id="lives"></h2>
+    <button id="myGame" onclick="clearBoard()">Build Your Own</button>
+    <div id="button-container">
+        <button id="solve-btn">Solve Puzzle</button>
+        <button onclick="generateSudoku()">New Game</button>
+    </div>
+    <div class="status-bar" id="status-bar">
+        <h2 class="button-container" id="lives-container">
+            Lives: <span id="lives" class="lives-container"></span>
+        </h2>
+        <h2 class="custom-message" id="custom-message">
+            For a unique solution, add at least 17 values.(Remaining : <span id="remaining-count">17</span>)
+        </h2>
+    </div>
     <div id="overlay">
         <div id="board-overlay"><div id="game-status"></div></div>
         <div class="board" id="sudoku-board"></div>
     </div>
     <br>
-    <div id="button-container">
-        <button id="solve-btn">Solve Puzzle</button>
-        <button onclick="generateSudoku()">New Game</button>
-    </div>
-
     <script src="index.js"></script>
 </body>
 
