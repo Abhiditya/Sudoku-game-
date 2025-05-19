@@ -129,7 +129,7 @@ button{
     height: 3rem;
     width: 10rem;
     font-size: 1.1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     background-color: rgb(198, 241, 238);
     font-weight: bold;
 }
@@ -169,7 +169,7 @@ button:hover{
     .top-right {
         position: relative;
         justify-content: center;
-        margin-top: -2rem;
+        margin: -1rem 0 0.5rem 0;
     }
 
     select {
@@ -181,6 +181,7 @@ button:hover{
         height: 2.5rem;
         width: 6rem;
         font-size: 14px;
+        margin: 0.8rem;
     }
 }
 
